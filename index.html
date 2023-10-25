@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
                                 <li class="header__list"><a href="#cake">Главная</a></li>
                                 <li class="header__list"><a href="#catalog">Сладости</a></li>
                                 <li class="header__list"><a href="#about">О сервисе</a></li>
-                                <li class="header__list"><a href="#back">Контактики</a></li>                                
+                                <li class="header__list"><a href="#back">Контактики</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -136,12 +136,12 @@
                         <h2>Есть вопросы? Задавайте!</h2>
                         <form>
                             <div class="form__group field">
-                                <input type="input" class="form__field" placeholder="Name" name="name" required />
+                                <input type="text" class="form__field" placeholder="Name" name="name" id="name" />
                                 <label for="name" class="form__label">Введите имя</label>
 
                             </div>
                             <div class="form__group field">
-                                <input type="tel" class="form__field" placeholder="Phone" name="phone"
+                                <input type="tel" class="form__field" placeholder="Phone" name="phone" id="phone"
                                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
                                 <label for="phone" class="form__label">Ваш телефон</label>
                             </div>
@@ -151,26 +151,30 @@
                                 <label for="email" class="form__label">Ваш e-mail</label>
                             </div>
                             <div class="form__group field text">
-                                <textarea id ="userComment" rows="4" cols="50" name="comment" class="form__field text"> Введите сообщение...</textarea>
+                                <textarea id="userComment" rows="4" cols="50" name="comment"
+                                    class="form__field text"> Введите сообщение...</textarea>
                             </div>
                             <div class="form__group field checkbox">
-                                <input type="checkbox" class="form__field box" id="vehicle1" name="vehicle1" value="Bike">
+                                <input type="checkbox" class="form__field box" id="vehicle1" name="vehicle1"
+                                    value="Bike">
                                 <label for="vehicle1" class="form__label box"> Я согласен на обработку моих персональных
                                     данных</label><br>
                             </div>
                             <div class="form__group field checkbox">
-                                <input type="checkbox" class="form__field box" id="vehicle2" name="vehicle2" value="Car">
+                                <input type="checkbox" class="form__field box" id="vehicle2" name="vehicle2"
+                                    value="Car">
                                 <label for="vehicle2" class="form__label box"> Я согласен с политикой
                                     конфиденциальности</label><br>
                             </div>
-                          
-                            
+
+
                             <!-- <br><br>
                             <input type="button" onclick="myFunction()" value="Submit"> -->
                         </form>
 
                         <div class="back__video">
-                            <button href="#" onclick="myFunction()" value="Submit" type="button" class="btn__back"><img src="img/play.svg" alt="play"></button>
+                            <button onclick="myFunction()" value="Submit" type="button" class="btn__back"><img
+                                    src="img/play.svg" alt="play"></button>
 
                         </div>
                     </div>
