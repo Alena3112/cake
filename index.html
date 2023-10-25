@@ -26,24 +26,23 @@
                     <div class="header__menu">
                         <nav class="header_title">
                             <ul class="menu">
-                                <li class="header__list"><a href="#">Главная</a></li>
-                                <li class="header__list"><a href="#">Сладости</a></li>
-                                <li class="header__list"><a href="#">О сервисе</a></li>
-                                <li class="header__list"><a href="#">Контактики</a></li>
-
+                                <li class="header__list"><a href="#cake">Главная</a></li>
+                                <li class="header__list"><a href="#catalog">Сладости</a></li>
+                                <li class="header__list"><a href="#about">О сервисе</a></li>
+                                <li class="header__list"><a href="#back">Контактики</a></li>                                
                             </ul>
                         </nav>
                     </div>
                     <div class="shop">
                         <div class="shop__img"><img src="img/shopaholic.png" alt="shop"></div>
                         <p>0 р.</p>
-                        <div class="shop__click"></div>
+                        <div class="shop__click"><img src="img/down.svg" alt="down"></div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="cake">
+            <section class="cake" id="cake">
                 <div class="wrap">
                     <div class="cake__block">
                         <div class="cake__text">
@@ -55,14 +54,10 @@
                             <div class="cake__bg"></div>
                             <img src="img/CAKE.png" alt="cake">
                         </div>
-
-
-
                     </div>
-
                 </div>
             </section>
-            <section class="catalog">
+            <section class="catalog" id="catalog">
                 <div class="wrap">
                     <div class="choice">
                         <h2>Почему выбирают нас?</h2>
@@ -103,7 +98,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="wrap about">
                     <h2 class="cakeBig">О компании “Сладкие моменты”</h2>
                     <div class="about__block">
@@ -135,7 +130,7 @@
 
                 </div>
             </section>
-            <section class="back">
+            <section class="back" id="back">
                 <div class="wrap back">
                     <div class="back__bg">
                         <h2>Есть вопросы? Задавайте!</h2>
@@ -155,21 +150,27 @@
                                     required />
                                 <label for="email" class="form__label">Ваш e-mail</label>
                             </div>
+                            <div class="form__group field text">
+                                <textarea id ="userComment" rows="4" cols="50" name="comment" class="form__field text"> Введите сообщение...</textarea>
+                            </div>
                             <div class="form__group field checkbox">
-                                <input type="checkbox" class="form__field" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1" class="form__label"> Я согласен на обработку моих персональных
+                                <input type="checkbox" class="form__field box" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1" class="form__label box"> Я согласен на обработку моих персональных
                                     данных</label><br>
                             </div>
                             <div class="form__group field checkbox">
-                                <input type="checkbox" class="form__field" id="vehicle2" name="vehicle2" value="Car">
-                                <label for="vehicle2" class="form__label"> Я согласен с политикой
+                                <input type="checkbox" class="form__field box" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2" class="form__label box"> Я согласен с политикой
                                     конфиденциальности</label><br>
                             </div>
-
+                          
+                            
+                            <!-- <br><br>
+                            <input type="button" onclick="myFunction()" value="Submit"> -->
                         </form>
 
                         <div class="back__video">
-                            <button type="button" class="btn"> <img src="img/play.svg" alt="play"></button>
+                            <button href="#" onclick="myFunction()" value="Submit" type="button" class="btn__back"><img src="img/play.svg" alt="play"></button>
 
                         </div>
                     </div>
